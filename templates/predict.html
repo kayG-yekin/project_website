@@ -1,0 +1,66 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+*{
+    margin:0px;
+    padding:0px;
+}
+        body{
+            align-items: center;
+            justify-content: center;
+        }
+        .box-container {
+
+
+            text-align: center;
+            padding-top: 80px;
+
+        }
+        input{
+            border-radius: 5px;
+            height: 30px;
+
+        }
+        button{
+            border-radius: 5px;
+        }
+        button:hover{
+            text-color:blue;
+            transition: 3s;
+        }
+
+
+    </style>
+</head>
+
+<div class="box-container">
+    <h2>Student Marks</h2>
+    <form action="result" >
+        <label for="dzo">Dzongkha:</label><br>
+        <input type="number" id="dzo" name="dzo" value=""><br>
+        <label for="Eng">English:</label><br>
+        <input type="number" id="eng" name="eng" value=""><br>
+        <label for="Maths">Maths:</label><br>
+        <input type="number"  id="maths" name="maths" value="0" placeholder="Enter your marks"><br>
+        <label for="bio">Biology:</label><br>
+        <input type="number" id="bio" name="bio" value=""><br>
+        <label for="phy">Physics:</label><br>
+        <input type="number" id="phy" name="phy" value=""><br>
+        <label for="che">Chemistry:</label><br>
+        <input type="number" id="che" name="che" value=""><br><br>
+        <button type="submit" value="PREDICT">PREDICT</button>
+        {#        <input type="submit" value="PREDICT">#}
+    </form>
+    <br>
+    <h2>{{result2}}</h2>
+    </body>
+
+</html>

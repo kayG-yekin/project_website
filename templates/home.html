@@ -1,0 +1,158 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performace Analysis System</title>
+    <link rel="shortcut icon"  href="{% static 'cap.png'%}">
+    <link rel="stylesheet"  type ="text/css" href="{% static 'styles.css' %}">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="#" class="logo">
+
+                <img style="height: 10vh;" src="{% static 'logo.png' %}">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon">
+
+                </span>
+            </label>
+            <ul class="menu">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="Prediction.html">Prediction</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- Content Area -->
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Student Performace<span> Prediction</span></h1>
+                <p>
+                    Education system has been playing a significant role in the life of every
+                    young boys and girls of Bhutan.
+                    Parents these days urges their children to
+                    get enroll in schools whereby there is number of students every year. Due to this reason it is very
+                    difficult and requires longer duration in processing the details of students. There is no such
+                    proper platform in Bhutan that provides an ample of information related to students. For an example,
+                    the Bhutan Council for school examinations and
+                    assessment (BCSEA) announces the result of Bhutan higher secondary education certificate (BHSEC-XII)
+                    every year but BCSEA provides only the specific and limited information to the society. BCSEA
+                    provides information like overall pass percentage of class 12 and performance ranking of the
+                    students but the details such as the subject topper, total passed students from each school, average
+                    performance level of every school and performance comparison between boys and girls are left out.
+                    Therefore, this project aims to analysis the result of class 12 science result and predict the class
+                    12 science results of coming year in order to provide a satisfactory information to the communities
+                    of Bhutan.
+                </p>
+
+            </div>
+            <div class="header-image">
+                <img style="height: 40vh;" src="{% static 'student.png' %}">
+            </div>
+        </div>
+        <!-- ARROw -->
+        <div class="arrow"></div>
+        <span class="scroll">Scroll Down</span>
+    </section>
+    <section class="subjects">
+        <div class="subject-heading">
+            <h2>Techniques used in ML model</h2>
+            <p>Machine Learning Techniques (like Regression, Classification, Clustering, Anomaly detection, etc.) are
+                used to build the training data or a mathematical model using certain algorithms based upon the
+                computations statistic to make prediction without the need of programming, as these techniques are
+                influential in making the system futuristic, models and promotes automation of things with reduced cost
+                and manpower.</p>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img style="height: 10vh;" src="{% static 'Linear.png'%}">
+                <font> Linear Regression</font>
+                <p>
+                    Linear regression is one of the easiest and most popular Machine Learning algorithms. It is a
+                    statistical method
+                    that is used for predictive analysis. Linear regression makes predictions for continuous/real or
+                    numeric variables
+                    such as sales, salary, age, product price, etc. Linear regression algorithm shows a linear
+                    relationship between
+                    a dependent (y) and one or more independent (y) variables, hence called as linear regression.
+                </p>
+                <a href="#">View</a>
+            </div>
+            <div class="box">
+                <img style="height: 10vh;" src="{% static 'tree.png' %}">
+                <font> Decision Tree</font>
+                <p>
+                    Decision tree learning or induction of decision trees is one of the predictive modelling approaches
+                    used in statistics,
+                    data mining and machine learning. It uses a decision tree (as a predictive model) to go from
+                    observations about
+                    an item (represented in the branches) to conclusions about the item's target value (represented in
+                    the leaves).
+                </p>
+                <a href="#">View</a>
+            </div>
+            <div class="box">
+                <img style="height: 10vh;" src="{% static 'class.png'%}">
+                <font>Naïve Bayes Classifiers</font>
+                <p>
+                    A Naive Bayes Classifier is a supervised algorithm in machine-learning which uses the Bayes Theorem.
+                    The theorem depends on the assumption that input variables are independent
+                    of each other. Irrespective of this assumption, it has proven to be a classifier with better
+                    results.
+                </p>
+                <a href="#">View</a>
+            </div>
+            <div class="box">
+                <img style="height: 10vh;" src="{% static 'logistic.png' %}">
+                <font> Logistic Regression</font>
+                <p>
+                    Logistic regression predicts the output of a categorical dependent variable. Therefore the outcome
+                    must be a
+                    categorical or discrete value. It can be either Yes or No, 0 or 1, true or False, etc. but instead
+                    of giving the exact value as 0 and 1, it gives the probabilistic values which lie between 0 and 1.
+                    Logistic Regression is much similar to the Linear Regression except that how they are used. Linear
+                    Regression is used for solving Regression problems, whereas Logistic regression is used for solving
+                    the classification problems.
+                </p>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img style="height: 40vh;" src="{% static 'student.png'%}">
+            </div>
+            <div class="about-text">
+                <h1>Performace of<span> Students</span></h1>
+                <p>
+                    enerating random paragraphs can be an excellent way for writers to get their creative flow going at
+                    thebeginning of the day. The writer has no idea what topic the random paragraph will be about when
+                    itappears. This forces the writer to use creativity to complete one of three
+                    common writing challenges.The writer can use
+                </p>
+                <a href="#" class="about-btn">Read More</a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <p>
+            Developed by GCIT
+
+        </p>
+    </footer>
+
+</body>
+
+</html>
